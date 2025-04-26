@@ -39,6 +39,12 @@ Note:This project currently depends on Nuand’s (bladeRF-adsb)[https://github.c
 | (Hardware 1090 MHz) |         | (Demodulate / Sync frames) |          | (Parse and structure aircraft data) |
 +-----------------+            +-------------------------+           +----------------------+
 
+
+
+![Screenshot 2025-04-26 at 8 21 44 AM](https://github.com/user-attachments/assets/a20393c5-8aad-4754-a8a1-8fafecf2561c)
+
+
+
 ## Future Roadmap
 | Feature | Status | Notes |
 |:--------|:------:|:------|
