@@ -1,7 +1,11 @@
 [package]
 name = "bladerf_adsb"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
+authors = ["Udi Shamir udishamir@gmail.com"]
+license = "MIT"
+repository = "https://github.com/udishamir/bladerf_adsb"
+description = "Lightweight ADS-B (Mode S) parser for BladeRF SDR devices."
 
 [[bench]]
 #name = "my_benchmark"
