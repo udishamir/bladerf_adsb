@@ -210,7 +210,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                                 }
 
                                 println!(
-                                    "✈️ ICAO: {icao} | Stored {:?} CPR | lat_cpr={}, lon_cpr={}",
+                                    "ICAO: {icao} | Stored {:?} CPR | lat_cpr={}, lon_cpr={}",
                                     pos.f, lat, lon
                                 );
 
@@ -223,11 +223,11 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                                             even.lat, even.lon, odd.lat, odd.lon, use_odd,
                                         ) {
                                             println!(
-                                                "📍 ICAO: {icao} | LAT: {:.6}, LON: {:.6}",
+                                                "ICAO: {icao} | LAT: {:.6}, LON: {:.6}",
                                                 lat, lon
                                             );
                                         } else {
-                                            println!("⚠️ ICAO: {icao} | CPR decode failed");
+                                            println!("ICAO: {icao} | CPR decode failed");
                                         }
                                     }
                                 }
@@ -248,7 +248,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                                 }
 
                                 println!(
-                                    "✈️ ICAO: {icao} | Stored {:?} CPR | lat_cpr={}, lon_cpr={}",
+                                    "ICAO: {icao} | Stored {:?} CPR | lat_cpr={}, lon_cpr={}",
                                     alt.odd_flag, lat, lon
                                 );
 
@@ -257,7 +257,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                                         && now.duration_since(odd.t).as_secs() < 10
                                     {
                                         println!(
-                                            "✅ ICAO {icao} has both Even and Odd CPRs — attempting decode..."
+                                            "ICAO {icao} has both Even and Odd CPRs — attempting decode..."
                                         );
 
                                         let use_odd = odd.t > even.t;
@@ -265,11 +265,11 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                                             even.lat, even.lon, odd.lat, odd.lon, use_odd,
                                         ) {
                                             println!(
-                                                "📍 ICAO: {icao} | LAT: {:.6}, LON: {:.6}",
+                                                "ICAO: {icao} | LAT: {:.6}, LON: {:.6}",
                                                 lat, lon
                                             );
                                         } else {
-                                            println!("⚠️ ICAO: {icao} | CPR decode failed");
+                                            println!("ICAO: {icao} | CPR decode failed");
                                         }
                                     }
                                 }
